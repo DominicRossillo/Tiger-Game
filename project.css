@@ -37,4 +37,60 @@ left:20px;
     left:33%;
      font-size: 150%;
      }
+#tigertextboxlabel
+{
+    font-size: 150%;
 
+
+}
+
+#charactersubmit
+{
+    height:80px; 
+    width:100px; 
+    margin: 50px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+     font-size: 150%;
+}
+
+#storypage
+{
+  font-size: 150%
+  }
+  
+  
+#junglepic
+{
+  height:50%;
+  width:50%;
+  }
+
+
+#helppage
+{
+  position: fixed;
+  bottom:0;
+  right:50;
+  height:50px; 
+  width:300px; 
+font-size: 150%;
+  font-color:black;
+
+}
+
+
+#sadface
+{
+height:60%;
+width:60%;
+}
+
+#cubpic
+{
+  height:60%;
+  width:60%;
+
+
+}

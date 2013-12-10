@@ -25,9 +25,123 @@
     <button id="malebutton" value="Male" Onclick="maletiger()" style= "button-align:center"> Male </button>
     
     <button id= "femalebutton" value="Female" Onclick="femaletiger()" style= "button-align:center"> Female </button>
-  
-  
-  </div
+  <br>  
+   <p id="tigertextboxlabel"style="position:relative; top:50%; left:45%"> Name Your Tiger </p>
+    <input id="namebox" type="text" style="position:relative; top:56%; left:45%">
+  <br>
+    <button id="charactersubmit" Onclick="SubmitChar()" > Create Tiger
+    </button>
+
+      </div>
+<!--tiger confirm page and your story-->
+<div id="YourTiger" style="display:none" align="center">
+
+<h1 style= text-align:center> This Is Your Tiger </h1>
+
+<body id="tigerpicture">
+
+    <p align="middle">
+            <img alt="Tiger pic" align="middle"  id="tigerimg">
+            <br>
+            <h2 id="yourtiger" align="middle"> 
+            </h2>
+<!--button that gets you from character bio page to the start of questions-->
+     <button style="button-align:center" onclick="storytime()"  value= "the Story" id="storytimebutton">
+     Story Time
+     </button>
    
+</body>
+
+</div>
+
+
+
+
+
+<div id="storypage" style="display:none" align="center">
+   <h1 id="storytitle" style="display:none">The Story</h1>
+
+  <div id="page0" style="display:none">
+  <br>
+    <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <br>
+    <button onclick="nextPage(0);">Click to Begin</button>
+  </div>
+
+  <div id="page1" style="display:none">
+    <h2>Page 1</h2>
+        <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <p>Oh no! Angry Hippos have stolen your food!</p>
+    <button onclick="nextPage(1);">Next</button>
+  </div>
+
+  <div id="page2" style="display:none">
+    <h2>Page 2</h2>
+        <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <p>Your cubs are getting hungry and you need to get the food back</p>
+    <button onclick="nextPage(2);">Next</button>
+  </div>
+
+  <div id="page3" style="display:none">
+    <h2>Page 3</h2>
+        <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <p>you need to solve a problem to steal a food item back from the hippos!</p>
+    <button onclick="nextPage(3);">Next</button>
+  </div>
+  
+   <div id="page4" style="display:none">
+    <h2>Page 4</h2>
+        <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <p>If you get 10 food items, you've saved your cubs</p>
+    <button onclick="nextPage(4);">Next</button>
+  </div>
+  
+  <div id="page5" style="display:none">
+    <h2>Page 5</h2>
+        <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <p>However, if you get 3 problems wrong, the hippos will run away with your food and your cubs will starve.</p>
+    <button onclick="nextPage(5);">Next</button>
+  </div>
+ 
+  <div id="page6" style="display:none">
+    <h2>Page 6</h2>
+        <img src="http://i.telegraph.co.uk/multimedia/archive/00794/hippos_794809i.jpg">
+    <p>So, are you ready to save your cubs!?</p>
+    <button onclick="adventurestart()" >Start the Adventure</button>
+  </div>
+  </div>
+
+  <div id="jungle"  style="display:none" align="center">
+<h1 id="jungletitle"> Welcome to the Jungle </h1>
+<img  src="http://everydaybipolar.files.wordpress.com/2011/09/jungle2.jpg" id="junglepic"  >
+<br>
+<h2 id="jungletextbox">Answer ten question right so you can get food for your cubs</h2>
+<button onclick= "junglequestion()" 
+id="junglequestionbutton"> Click for Your Question </button>
+<br>
+<button onclick="submitanswer()" id="jungleanswerbutton" style="display:none"> Submit Answer</button>
+<br>
+<input type="text" style="display:none" id="jungleanswerbox">
+  </div>
+
+  <div id="win" style="display:none" align="center">
+<h1 id="congrats"> Congratulations! <h1>
+<img src="http://3.bp.blogspot.com/-3BRzK-j1t2E/TnhrFYkA2uI/AAAAAAAAA5s/RFvgmNzvA_M/s1600/tiger_cubs_cute+5.jpg" id="cubpic" >
+<br>
+<h2 id="youwin"> You have saved your cubs from starving! </h2>
+  </div>
+
+  <div id="lose" style="display:none" align="center">
+<h1 id="gameover"> Game Over! <h1>
+<img src="http://www.loisdonovan.com/blog/wp-content/uploads/2013/11/Sad-Face-emoticon.jpg" id="sadface" >
+<br>
+<h2 id="youlose"> The hippos ran away with your food and your cubs have starved to death! </h2>
+  <p id="howtorestart"> Refresh the page to play again</p>
+  </div>
+  
+</div>
+
+
+   <a id="helppage" href="helppage.html" target="helppage.html" style="color=black" >Click here for Instruction/Help</a>
   
 </html>
